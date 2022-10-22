@@ -29,6 +29,10 @@ img {
     font-size: 4vw;
 }
 
+.heading i {
+    color: #f6cc7d;
+}
+
 nav a {
     line-height: 50px;
     font-weight: 900;
