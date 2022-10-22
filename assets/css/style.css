@@ -11,14 +11,19 @@ body {
 }
 
 img {
-    width: 628px;
-    height: 434px;
+    width: 588px;
+    height: 394px;
+}
+
+main {
+    text-align: center;
 }
 
 .heading {
     letter-spacing: 3px;
     font-weight: 900;
     font-size: 4vw;
+    text-align: center;
 }
 
 .heading a {
@@ -54,14 +59,31 @@ nav a:hover {
 
 .intro {
     font-weight: 400;
+    text-align: center;
 }
 
 .scores {
     font-size: 2vw;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .button a {
+    font-weight: 900;
     font-size: 1.5vw;
     text-decoration: none;
+    color: #fff;
+    border: 2px solid #3d8f7d;
+    border-radius: 5%;
+    background-color: #3d8f7d;
+    padding: 2px 10px;
+}
+
+.button a:hover {
     color: #3d8f7d;
+    background-color: #fff;
 }
