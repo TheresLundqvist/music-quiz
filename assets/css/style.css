@@ -87,3 +87,25 @@ nav a:hover {
     color: #3d8f7d;
     background-color: #fff;
 }
+
+.game-area {
+    text-align: center;
+}
+
+.score-area {
+    text-align: center;
+}
+
+.scores {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#score {
+    color: #fff;
+    border: 2px solid#3d8f7d;
+    border-radius: 5%;
+    background-color: #3d8f7d;
+    padding: 2px 10px;
+}
