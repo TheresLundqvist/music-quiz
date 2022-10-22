@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    width: 628px;
+    height: 434px;
+}
+
+.heading {
+    font-family: Bowlby One, sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #3d8f7d;
+}
