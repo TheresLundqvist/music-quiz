@@ -29,6 +29,16 @@ img {
     font-size: 4vw;
 }
 
+nav a {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #3d8f7d;
+    float: right;
+    margin-right: 50px;
+}
+
 .intro {
     font-weight: 400;
 }
