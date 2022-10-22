@@ -11,8 +11,8 @@ body {
 }
 
 img {
-    width: 588px;
-    height: 394px;
+    width: 538px;
+    height: 344px;
 }
 
 main {
@@ -62,11 +62,6 @@ nav a:hover {
     text-align: center;
 }
 
-.scores {
-    font-size: 2vw;
-    text-align: center;
-}
-
 .button {
     text-align: center;
     margin-top: 10px;
@@ -94,18 +89,31 @@ nav a:hover {
 
 .score-area {
     text-align: center;
+    background-color: #3d8f7d;
 }
 
 .scores {
+    font-weight: 900;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 10px 70px;
 }
 
 #score {
-    color: #fff;
-    border: 2px solid#3d8f7d;
+    color: #3d8f7d;
+    border: 2px solid#fff;
     border-radius: 5%;
-    background-color: #3d8f7d;
+    background-color: #fff;
     padding: 2px 10px;
+}
+
+.questions h3 {
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+
+.opt-one {
+    display: inline-block;
 }
