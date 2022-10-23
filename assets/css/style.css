@@ -10,6 +10,8 @@ body {
     border: 0;
 }
 
+/* Main entry page */
+
 img {
     width: 538px;
     height: 344px;
@@ -35,28 +37,6 @@ main {
 }
 
 .heading i {
-    color: #f6cc7d;
-}
-
-nav {
-    height: 100px;
-}
-
-nav a {
-    margin-top: 10px;
-    font-weight: 900;
-    font-size: 1.2vw;
-    text-decoration: none;
-    color: #fff;
-    float: right;
-    margin-right: 50px;
-    background-color: #3d8f7d;
-    border-radius: 5%;
-    padding: 2px 10px;
-}
-
-nav a:hover {
-    background-color: #3d8f7d;
     color: #f6cc7d;
 }
 
@@ -86,13 +66,76 @@ nav a:hover {
     color: #f6cc7d;
 }
 
+/* Game page */
+
+nav {
+    height: 100px;
+}
+
+nav a {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-right: 50px;
+    background-color: #3d8f7d;
+    border-radius: 5%;
+    padding: 2px 10px;
+}
+
+nav a:hover {
+    background-color: #3d8f7d;
+    color: #f6cc7d;
+}
+
+/* Game area */
+
 .game-area {
     text-align: center;
+}
+
+.questions h3 {
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.questions p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.questions i {
+    color: #f6cc7d;
+}
+
+.answers {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .opt-three {
     margin-left: 10px;
 }
+
+#next {
+    font-size: 1.3vw;
+    border: 2px solid #3d8f7d;
+    border-radius: 5%;
+    background-color: #fff;
+    color: #3d8f7d;
+    margin: 10px;
+    padding: 5px 10px;
+    font-weight: 900;
+}
+
+#next:hover {
+    background-color: #3d8f7d;
+    color: #f6cc7d;
+}
+
+/* Score area */
 
 .score-area {
     text-align: center;
@@ -121,42 +164,9 @@ nav a:hover {
     padding: 2px 10px;
 }
 
-.questions h3 {
-    font-size: 3vw;
-    font-weight: 900;
-}
+/* Media queries */
 
-.questions p {
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.questions i {
-    color: #f6cc7d;
-}
-
-.answers {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-#next {
-    font-size: 1.3vw;
-    border: 2px solid #3d8f7d;
-    border-radius: 5%;
-    background-color: #fff;
-    color: #3d8f7d;
-    margin: 10px;
-    padding: 5px 10px;
-    font-weight: 900;
-}
-
-#next:hover {
-    background-color: #3d8f7d;
-    color: #f6cc7d;
-}
-
-/* For small devices below 576px and down */
+/* For medium size screens from 992px and down */
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 6vw;
@@ -178,6 +188,7 @@ nav a:hover {
         font-size: 1.7vw;
     }
 
+/* For medium to small screens (tablets) from 890px and down */
 @media screen and (max-width: 890px) {
     img {
         width: 438px;
@@ -189,8 +200,8 @@ nav a:hover {
     }
 }
 
-    
-}
+
+/* For small screens (tablets) from 576px and down */    
 @media screen and (max-width: 576px) {
     img {
         width: 438px;
@@ -215,6 +226,7 @@ nav a:hover {
     }
 }
 
+/* For smaller screens (mobile) from 450px and down */
 @media screen and (max-width: 450px) {
     .questions h3 {
         font-size: 6vw;
@@ -251,6 +263,7 @@ nav a:hover {
     }
 }
 
+/* For extra small screens (mobile) from 350px and down */
 @media screen and (max-width: 350px) {
     .heading {
         font-size: 9.5vw;
