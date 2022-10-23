@@ -18,7 +18,7 @@
 <body>
     <!-- navigation -->
     <nav>
-        <a href="index.html">Start over</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
     </nav>
     
     <!-- main game-area -->
@@ -27,7 +27,8 @@
 
             <!-- questions -->
             <div class="questions">
-                <h3>Here´s the questions?</h3>
+                <h3><i class="fa-solid fa-star"></i> Here is the questions?</h3>
+                <p>Question <span id="question-nr">0</span> out of 20</p>
             </div>
             <!-- options -->
             <div class="answers">
@@ -46,7 +47,7 @@
             </div>
             <!-- submit -->
             <div>
-                <button id="submit" data-type="submit">Submit Answer</button>
+                <button id="next">Next <i class="fa-solid fa-arrow-right"></i></button>
             </div>
             </div>
         </div>
@@ -54,8 +55,8 @@
 
     <!-- score area -->
     <div class="score-area">
-        <p class="scores">Correct answers <span id="score">0</span></p>
-        <p class="scores">Incorrect answers <span id="score">0</span></P>
+        <p class="scores">Correct answers <span id="right-score">0</span></p>
+        <p class="scores">Incorrect answers <span id="wrong-score">0</span></P>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
