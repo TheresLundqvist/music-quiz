@@ -158,3 +158,69 @@ nav a:hover {
     background-color: #3d8f7d;
     color: #f6cc7d;
 }
+
+/* For small devices below 576px and down */
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 6vw;
+    }
+
+    .button a {
+        font-size: 3vw;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    img {
+        width: 438px;
+        height: 244px;
+    }
+
+    .heading {
+        font-size: 6vw;
+    }
+
+    .intro {
+        font-size: 3.5vw;
+        margin: 5px 75px;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+    
+    .button a {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 8vw;
+    }
+
+    .intro {
+        font-size: 4.5vw;
+    }
+
+    .button a {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    img {
+        width: 338px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .heading {
+        font-size: 9.5vw;
+    }
+
+    .button a {
+        font-size: 5.5vw;
+    }
+}
