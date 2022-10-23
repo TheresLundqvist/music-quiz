@@ -87,18 +87,14 @@ nav a:hover {
 
 .game-area {
     text-align: center;
-    background-color: #3d8f7d;
-    color: #fff;
-    width: 60%;
-    position: absolute;
-    right: 250px;
+}
+
+.opt-three {
+    margin-left: 10px;
 }
 
 .score-area {
     text-align: center;
-    position: absolute;
-    bottom: 150px;
-    left: 350px;
 }
 
 .scores {
@@ -168,6 +164,20 @@ nav a:hover {
     .button a {
         font-size: 3vw;
     }
+
+    .scores {
+        font-size: 2vw;
+    }
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    #next {
+        font-size: 1.7vw;
+    }
+
+
     
 }
 @media screen and (max-width: 576px) {
@@ -195,6 +205,15 @@ nav a:hover {
 }
 
 @media screen and (max-width: 450px) {
+    .questions h3 {
+        font-size: 6vw;
+    }
+
+    img {
+        width: 338px;
+        height: 230px;
+    }
+
     .heading {
         font-size: 8vw;
     }
@@ -206,12 +225,18 @@ nav a:hover {
     .button a {
         font-size: 4.5vw;
     }
-}
 
-@media screen and (max-width: 410px) {
-    img {
-        width: 338px;
-        height: 230px;
+    #next {
+        font-size: 3vw;
+    }
+    
+    .scores {
+        font-size: 3.5vw;
+        margin: 10px 10px;
+    }
+
+    nav a {
+        font-size: 4vw;
     }
 }
 
@@ -222,5 +247,9 @@ nav a:hover {
 
     .button a {
         font-size: 5.5vw;
+    }
+
+    .scores {
+        font-size: 4.3vw;
     }
 }
