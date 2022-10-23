@@ -63,6 +63,7 @@ nav a:hover {
 .intro {
     font-weight: 400;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -177,6 +178,16 @@ nav a:hover {
         font-size: 1.7vw;
     }
 
+@media screen and (max-width: 890px) {
+    img {
+        width: 438px;
+        height: 254px;
+    }
+
+    .intro {
+        margin: 0px 70px;
+    }
+}
 
     
 }
