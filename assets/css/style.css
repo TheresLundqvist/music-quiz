@@ -38,10 +38,14 @@ main {
     color: #f6cc7d;
 }
 
+nav {
+    height: 100px;
+}
+
 nav a {
     margin-top: 10px;
     font-weight: 900;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-decoration: none;
     color: #fff;
     float: right;
@@ -69,7 +73,7 @@ nav a:hover {
 
 .button a {
     font-weight: 900;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     text-decoration: none;
     color: #fff;
     border: 2px solid #3d8f7d;
@@ -89,31 +93,41 @@ nav a:hover {
 
 .score-area {
     text-align: center;
-    background-color: #3d8f7d;
 }
 
 .scores {
     font-weight: 900;
-    color: #fff;
-    font-size: 2vw;
+    color: #3d8f7d;
+    font-size: 1.5vw;
     text-align: center;
     display: inline-block;
     margin: 10px 70px;
 }
 
 #score {
-    color: #3d8f7d;
-    border: 2px solid#fff;
+    color: #fff;
+    border: 2px solid #3d8f7d;
     border-radius: 5%;
-    background-color: #fff;
+    background-color: #3d8f7d;
     padding: 2px 10px;
 }
 
 .questions h3 {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 900;
 }
 
-.opt-one {
+.answers {
     display: inline-block;
+}
+
+#submit {
+    font-size: 1.3vw;
+    border: 2px solid #3d8f7d;
+    border-radius: 5%;
+    background-color: #fff;
+    color: #3d8f7d;
+    margin: 10px;
+    padding: 5px 10px;
+    font-weight: 900;
 }
