@@ -31,14 +31,23 @@ const howToPlayBox = document.getElementsByClassName("how-to-play");
 const closeHowTo = document.getElementById("close-how-to");
 
 /* Event listener for how to play button */
-howToPlayButton.addEventListener("click", e => {
-    howToPlayBox.classList.remove("hidden");
-});
+howToPlayButton.addEventListener("click", showRulesBox); 
+
+/* Function to show how to play box */ 
+function showRulesBox() {
+    howToPlayBox[0].classList.remove("hidden");
+};
 
  /* Closes how to play box */
- closeHowTo.addEventListener("click", e => {
-    howToPlayBox.classList.add("hidden");
-});
+ closeHowTo.addEventListener("click", closeRulesBox);
+
+ function closeRulesBox() {
+    howToPlayBox[0].classList.add("hidden");
+ }
+ 
+
+
+
 
 function highScores() {
 
