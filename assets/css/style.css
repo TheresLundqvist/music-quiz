@@ -174,15 +174,18 @@ nav a:hover {
     padding: 10px 10px;
     background-color: #3d8f7d;
     color: #fff;
+    text-align: center;
 }
 
 #how-to {
     margin-left: 50px;
+    float: left;
+
 }
 
 #high-score {
-    float: right;
     margin-right: 50px;
+    float: right;
 }
 
 #how-to:hover,
@@ -225,6 +228,11 @@ nav a:hover {
     .intro {
         margin: 0px 70px;
     }
+
+    #how-to,
+    #high-score {
+        font-size: 2vw;
+    }
 }
 
 
@@ -250,6 +258,11 @@ nav a:hover {
     
     .button a {
         font-size: 3.5vw;
+    }
+
+    #how-to,
+    #high-score {
+        font-size: 3vw;
     }
 }
 
