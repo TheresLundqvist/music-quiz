@@ -25,13 +25,20 @@ function wrongAnswer() {
 
 }
 
-let rules = document.getElementById("how-to");
-rules.addEventListener("click", howToPlay);
+/* How to play box */ 
+const howToPlayButton = document.getElementById("how-to");
+const howToPlayBox = document.getElementsByClassName("how-to-play");
+const closeHowTo = document.getElementById("close-how-to");
 
-function howToPlay() {
-    console.log("From HowToPlay!");
+/* Event listener for how to play button */
+howToPlayButton.addEventListener("click", e => {
+    howToPlayBox.classList.remove("hidden");
+});
 
-}
+ /* Closes how to play box */
+ closeHowTo.addEventListener("click", e => {
+    howToPlayBox.classList.add("hidden");
+});
 
 function highScores() {
 
