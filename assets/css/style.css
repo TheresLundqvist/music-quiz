@@ -167,6 +167,31 @@ nav a:hover {
 
 /* footer */
 
+.hidden {
+    display: none;
+}
+
+.how-to-play {
+    background-color: #f6cc7d;
+    padding: 20px 50px;
+    position: fixed;
+    left: 250px;
+    top: 50px;
+    font-size: 1.5vw;
+}
+
+.how-to-play p {
+    font-style: italic;
+    font-weight: 900;
+}
+
+#close-how-to {
+    position: fixed;
+    top: 60px;
+    right: 300px;
+    font-size: 2.5vw;
+}
+
 #how-to,
 #high-score {
     font-size: 1.3vw;

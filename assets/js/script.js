@@ -1,6 +1,7 @@
 /* jshint esversion: 11 */
 
 function changeQuestions() {
+    let questions = document.getElementById("question");
 
 }
 
@@ -24,10 +25,14 @@ function wrongAnswer() {
 
 }
 
+let rules = document.getElementById("how-to");
+rules.addEventListener("click", howToPlay);
+
 function howToPlay() {
+    console.log("From HowToPlay!");
 
 }
 
 function highScores() {
-    
+
 }
