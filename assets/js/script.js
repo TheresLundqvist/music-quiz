@@ -121,4 +121,4 @@ function showRulesBox() {
 
  function closeRulesBox() {
     howToPlayBox.classList.add("hidden");
-}
+ }
