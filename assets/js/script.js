@@ -98,8 +98,10 @@ function correctAnswer(selectedLabel) {
     rightAnswerSpan.innerText = rightAnswers;
 }
 
-function wrongAnswer() {
-
+function wrongAnswer(selectedLabel) {
+    selectedLabel.classList.add("incorrect");
+    wrongAnswers += 0.5;
+    wrongAnswerSpan.innerText = wrongAnswers;
 }
 
 /* How to play box */ 
