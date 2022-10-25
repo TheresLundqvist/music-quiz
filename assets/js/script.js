@@ -75,6 +75,9 @@ function restartGame() {
     location.reload();
 }
 
+function questionNumber() {
+    questionNr.innerText = questionIndex + 1;
+}
 function nextQuestion() {
 
 }
