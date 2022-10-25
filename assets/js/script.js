@@ -5,6 +5,11 @@ let rightAnswerSpan = document.getElementById("right-score");
 let rightAnswers = 0;
 let wrongAnswerSpan = document.getElementById("wrong-score");
 let wrongAnswers = 0;
+let howToPlayButton = document.getElementById("how-to");
+let howToPlayBox = document.getElementById("how-to-play");
+let closeHowTo = document.getElementById("close-how-to");
+let hideGameArea = document.getElementsByClassName("game-area");
+let hideScoreArea = document.getElementsByClassName("score-area");
 let nextButton = document.getElementById("next");
 let resetButton = document.getElementById("restart");
 let questionNr = document.getElementById("question-nr");
@@ -12,7 +17,6 @@ let optionInputs = document.querySelectorAll("#options input");
 let optionLabels = document.querySelectorAll("#options label");
 let questionSpan = document.getElementById("question");
 let questionCount = document.getElementById("question-count");
-
 
 questionCount.innerText = questions.length;
 
@@ -105,10 +109,7 @@ function wrongAnswer(selectedLabel) {
     wrongAnswerSpan.innerText = wrongAnswers;
 }
 
-/* How to play box */ 
-let howToPlayButton = document.getElementById("how-to");
-let howToPlayBox = document.getElementById("how-to-play");
-let closeHowTo = document.getElementById("close-how-to");
+/* How to play box */
 
 /* Event listener for how to play button */
 howToPlayButton.addEventListener("click", showRulesBox); 
@@ -116,6 +117,9 @@ howToPlayButton.addEventListener("click", showRulesBox);
 /* Function to show how to play box */ 
 function showRulesBox() {
     howToPlayBox.classList.remove("hidden");
+    /* hide everything else in background */
+    hideGameArea[0].classList.add("hidden");
+    hideScoreArea[0].classList.add("hidden");
 };
 
  /* Closes how to play box */
@@ -123,4 +127,7 @@ function showRulesBox() {
 
  function closeRulesBox() {
     howToPlayBox.classList.add("hidden");
+    /* show content again when how to closes */
+    hideGameArea[0].classList.remove("hidden");
+    hideScoreArea[0].classList.remove("hidden");
  }
