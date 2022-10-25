@@ -29,42 +29,41 @@
 
             <!-- questions -->
             <div class="questions">
-                <h3 id="question"><i class="fa-solid fa-star"></i> Here is the questions?</h3>
-                <p>Question <span id="question-nr">0</span> out of 20</p>
+                <h3><i class="fa-solid fa-star"></i><span id="question">loading question</span></h3>
+                <p>Question <span id="question-nr">0</span> out of <span id="question-count"></span></p>
             </div>
             <!-- options -->
             <div class="answers">
-                <div class="opt-one">
-                <input type="radio" id="option-one">
-                <label for="option-one">Here is option one</label>
-                </div>
-                <div class="opt-two"> 
-                <input type="radio" id="option-two">
-                <label for="option-two">Here is option two</label>
-                </div>
-                <div class="opt-three">
-                <input type="radio" id="option-three">
-                <label for="option-three">Here is option three</label>
+                <div id="options">
+                    <input type="radio" id="option-one" name="answers">
+                    <label for="option-one">Here is option one</label>
+                    <br>
+                    <input type="radio" id="option-two" name="answers">
+                    <label for="option-two">Here is option two</label>
+                    <br>
+                    <input type="radio" id="option-three" name="answers">
+                    <label for="option-three">Here is option three</label>
                 </div>
             </div>
             <!-- next question-button -->
             <div>
-                <button id="next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                <button id="next" class="hidden">Next <i class="fa-solid fa-arrow-right"></i></button>
+                <button id="restart" class="hidden">Restart</button>
             </div>
             </div>
         </div>
     </main>
 
     <!-- score area -->
-    <div class="score-area">
+    <section class="score-area">
         <p class="scores">Correct answers <span id="right-score">0</span></p>
         <p class="scores">Incorrect answers <span id="wrong-score">0</span></P>
-    </div>
+    </section>
 
     <footer>
         <!-- how to play -->
         <button id="how-to">How to Play</button>
-        <div class="how-to-play hidden">
+        <div id="how-to-play" class="hidden">
             <span id="close-how-to">&times;</span>
                 <ul>
                     <li>The game will generate 20 music related questions</li>
@@ -86,14 +85,15 @@
             <span id="close-high-score">&times;</span>
             <h2>High Scores</h2>
             <ul>
-                <li>This is someones score</li>
-                <li>This is another score</li>
-                <li>And another fellow..</li>
+                <li id="score-one">This is someones score</li>
+                <li id="score-two">This is another score</li>
+                <li id="score-three">And another fellow..</li>
             </ul>
         </div>
     </footer>
 
     <!-- javascript -->
+    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
