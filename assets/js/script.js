@@ -46,7 +46,29 @@ function changeQuestions(question) {
     });
 }
 
-function changeOptions() {
+function checkAnswer(e) {
+    nextButton.classList.remove("hidden");
+    let selectedLabel;
+    let selectedItem = e.target;
+    if (selectedItem.nodeName == "INPUT") {
+        selectedLabel = selectedItem.nextElementSibling;
+    } else {
+        selectedLabel = selectedItem;
+    }
+    let dataValue = selectedLabel.dataset.correct;
+    // check to see if the user is incorrect or correct
+    if (dataValue) {
+        correctAnswer(selectedLabel);
+    } else {
+        wrongAnswer(selectedLabel);
+    }
+    if(shuffledQuestions.length > questionIndex + 1) {
+        nextButton.addEventListener("click", nextQuestion);
+    } else {
+        nextButton.classList.add("hidden");
+        resetButton.classList.remove("hidden");
+    }
+}
 
 }
 
