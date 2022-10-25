@@ -16,6 +16,12 @@ let questionCount = document.getElementById("question-count");
 function changeQuestions() {
     let questions = document.getElementById("question");
 
+questionCount.innerText = questions.length;
+
+shuffleQuestions();
+function shuffleQuestions() {
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    getNextQuestion();
 }
 
 function questionNumber() {
