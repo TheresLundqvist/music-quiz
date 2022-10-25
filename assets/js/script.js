@@ -92,8 +92,10 @@ function nextQuestion() {
     getNextQuestion();
 }
 
-function correctAnswer() {
-
+function correctAnswer(selectedLabel) {
+    selectedLabel.classList.add("correct");
+    rightAnswers += 0.5;
+    rightAnswerSpan.innerText = rightAnswers;
 }
 
 function wrongAnswer() {
