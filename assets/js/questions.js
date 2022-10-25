@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Which rap group released the album 'Straight Outta Compton'?",
+        question: 'Which rap group released the album "Straight Outta Compton"?',
         answers: [
             { text: "N.W.A", correct: true },
             { text: "Run-D.M.C.", correct: false },
@@ -25,7 +25,7 @@ const questions = [
         ]
     },
     {
-        question: "Which band released songs suchs as 'Rio', 'Girls on Film', and 'The Reflex'?",
+        question: 'Which band released songs suchs as "Rio", "Girls on Film", and "The Reflex"?',
         answers: [
             { text: "Duran Duran", correct: true },
             { text: "Depeche Mode", correct: false },
@@ -49,7 +49,7 @@ const questions = [
         ]
     },
     {
-        question: "Which Disney character sings the song 'A Dream is a Wish Your Heart Makes'?",
+        question: 'Which Disney character sings the song "A Dream is a Wish Your Heart Makes"?',
         answers: [
             { text: "Snow White", correct: false },
             { text: "Cinderella", correct: true },
@@ -73,7 +73,7 @@ const questions = [
         ]
     },
     {
-        question: "Whose signature guitar technique is called the 'windmill'?",
+        question: 'Whose signature guitar technique is called the "windmill"?',
         answers: [
             { text: "Pete Townshend", correct: true },
             { text: "Eddie Van Halen", correct: false },
@@ -89,7 +89,7 @@ const questions = [
         ]
     },
     {
-        question: "From which country did the song 'Gangnam Style' originate from?",
+        question: 'From which country did the song "Gangnam Style" originate from?',
         answers: [
             { text: "South Korea", correct: true },
             { text: "China", correct: false },
@@ -121,7 +121,7 @@ const questions = [
         ]
     },
     {
-        question: "What Led Zeppelin album contains 'Stairway to Heaven'?",
+        question: 'What Led Zeppelin album contains "Stairway to Heaven"?',
         answers: [
             { text: "Led Zeppelin IV", correct: true },
             { text: "Physical Graffiti", correct: false },
