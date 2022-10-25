@@ -24,7 +24,9 @@ function shuffleQuestions() {
     getNextQuestion();
 }
 
-function questionNumber() {
+function getNextQuestion() {
+    changeQuestions(shuffledQuestions[questionIndex]);
+}
 
 }
 
