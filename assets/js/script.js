@@ -70,6 +70,9 @@ function checkAnswer(e) {
     }
 }
 
+resetButton.addEventListener("click", restartGame);
+function restartGame() {
+    location.reload();
 }
 
 function nextQuestion() {
