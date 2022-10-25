@@ -13,8 +13,6 @@ let optionLabels = document.querySelectorAll("#options label");
 let questionSpan = document.getElementById("question");
 let questionCount = document.getElementById("question-count");
 
-function changeQuestions() {
-    let questions = document.getElementById("question");
 
 questionCount.innerText = questions.length;
 
@@ -78,6 +76,7 @@ function restartGame() {
 function questionNumber() {
     questionNr.innerText = questionIndex + 1;
 }
+
 function nextQuestion() {
     optionInputs.forEach(input => {
         delete input.dataset.correct;
