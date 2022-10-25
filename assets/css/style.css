@@ -115,11 +115,20 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.opt-three {
-    margin-left: 10px;
+label.correct {
+    background-color: #3d8f7d;
+    color: white;
+    padding: 0 10px;
 }
 
-#next {
+label.incorrect {
+    background-color: #f57558;
+    color: white;
+    padding: 0 10px;
+}
+
+#next,
+#restart {
     font-size: 1.3vw;
     border: 2px solid #3d8f7d;
     border-radius: 5%;
@@ -130,7 +139,8 @@ nav a:hover {
     font-weight: 900;
 }
 
-#next:hover {
+#next:hover,
+#restart:hover {
     background-color: #3d8f7d;
     color: #f6cc7d;
 }
@@ -171,7 +181,7 @@ nav a:hover {
     display: none;
 }
 
-.how-to-play {
+#how-to-play {
     background-color: #f6cc7d;
     padding: 20px 50px;
     position: fixed;
@@ -180,7 +190,7 @@ nav a:hover {
     font-size: 1.5vw;
 }
 
-.how-to-play p {
+#how-to-play p {
     font-style: italic;
     font-weight: 900;
 }
