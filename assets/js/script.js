@@ -1,4 +1,17 @@
 /* jshint esversion: 11 */
+let shuffledQuestions;
+let questionIndex = 0;
+let rightAnswerSpan = document.getElementById("right-score");
+let rightAnswers = 0;
+let wrongAnswerSpan = document.getElementById("wrong-score");
+let wrongAnswers = 0;
+let nextButton = document.getElementById("next");
+let resetButton = document.getElementById("restart");
+let questionNr = document.getElementById("question-nr");
+let optionInputs = document.querySelectorAll("#options input");
+let optionLabels = document.querySelectorAll("#options label");
+let questionSpan = document.getElementById("question");
+let questionCount = document.getElementById("question-count");
 
 function changeQuestions() {
     let questions = document.getElementById("question");
