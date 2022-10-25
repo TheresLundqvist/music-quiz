@@ -28,6 +28,22 @@ function getNextQuestion() {
     changeQuestions(shuffledQuestions[questionIndex]);
 }
 
+function changeQuestions(question) {
+    questionNumber();
+    questionSpan.innerText = question.question;
+    optionLabels.forEach(function(label, labelIndex) {
+        question.answers.forEach(function(answer, answerIndex) {
+            if (labelIndex == answerIndex) {
+                label.innerText = answer.text;
+                if (answer.correct) {
+                    label.dataset.correct = answer.correct;
+                    label.previousElementSibling.dataset.correct = answer.correct;
+                }
+                label.addEventListener("click", checkAnswer);
+                label.previousElementSibling.addEventListener("click", checkAnswer);
+            }
+        });
+    });
 }
 
 function changeOptions() {
