@@ -91,12 +91,14 @@ function nextQuestion() {
     getNextQuestion();
 }
 
+/* Correct answer counter */ 
 function correctAnswer(selectedLabel) {
     selectedLabel.classList.add("correct");
     rightAnswers += 0.5;
     rightAnswerSpan.innerText = rightAnswers;
 }
 
+/* Incorrect answer counter */ 
 function wrongAnswer(selectedLabel) {
     selectedLabel.classList.add("incorrect");
     wrongAnswers += 0.5;
