@@ -79,7 +79,17 @@ function questionNumber() {
     questionNr.innerText = questionIndex + 1;
 }
 function nextQuestion() {
-
+    optionInputs.forEach(input => {
+        delete input.dataset.correct;
+        input.checked = false;
+        input.classList.remove("correct", "incorrect");
+    });
+    optionLabels.forEach(label => {
+        delete label.dataset.correct;
+        label.classList.remove("correct", "incorrect");
+    });
+    questionIndex++;
+    getNextQuestion();
 }
 
 function correctAnswer() {
