@@ -29,6 +29,7 @@ function shuffleQuestions() {
 
 // function to change question to next from question-index.
 function getNextQuestion() {
+    enableOptions();
     changeQuestions(shuffledQuestions[questionIndex]);
 }
 
