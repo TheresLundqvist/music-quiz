@@ -151,5 +151,13 @@ const questions = [
             { text: "Mike Shinoda", correct: false },
             { text: "Matthew Bellamy", correct: false }
         ]
+    },
+    {
+        question: "What was Freddie Mercury's real name?",
+        answers: [
+            { text: "Farrokh Bulsara", correct: true },
+            { text: "Frederick Merouck", correct: false },
+            { text: "Merouck Farrokh", correct: false }
+        ]
     }
 ];
