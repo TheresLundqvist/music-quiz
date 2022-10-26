@@ -170,8 +170,7 @@ label.incorrect {
     padding: 0 10px;
 }
 
-#next,
-#restart {
+#next {
     font-size: 1.3vw;
     border: 2px solid #3d8f7d;
     border-radius: 5%;
@@ -180,6 +179,17 @@ label.incorrect {
     margin: 10px;
     padding: 5px 10px;
     font-weight: 900;
+}
+
+#restart {
+    font-size: 2vw;
+    background-color: #f6cc7d;
+    border: 2px solid #3d8f7d;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 15px;
+    font-weight: 900;
+    color: #3d8f7d;
 }
 
 #next:hover,
