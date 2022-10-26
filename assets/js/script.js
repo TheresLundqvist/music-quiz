@@ -20,12 +20,14 @@ let questionCount = document.getElementById("question-count");
 
 questionCount.innerText = questions.length;
 
+// function to shuffle questions with math random.
 shuffleQuestions();
 function shuffleQuestions() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     getNextQuestion();
 }
 
+// function to change question to next from question-index.
 function getNextQuestion() {
     changeQuestions(shuffledQuestions[questionIndex]);
 }
@@ -95,39 +97,39 @@ function nextQuestion() {
     getNextQuestion();
 }
 
-/* Correct answer counter */ 
+// Correct answer counter
 function correctAnswer(selectedLabel) {
     selectedLabel.classList.add("correct");
     rightAnswers += 0.5;
     rightAnswerSpan.innerText = rightAnswers;
 }
 
-/* Incorrect answer counter */ 
+// Incorrect answer counter
 function wrongAnswer(selectedLabel) {
     selectedLabel.classList.add("incorrect");
     wrongAnswers += 0.5;
     wrongAnswerSpan.innerText = wrongAnswers;
 }
 
-/* How to play box */
+// How to play box
 
-/* Event listener for how to play button */
+// Event listener for how to play button
 howToPlayButton.addEventListener("click", showRulesBox); 
 
-/* Function to show how to play box */ 
+// Function to show how to play box
 function showRulesBox() {
     howToPlayBox.classList.remove("hidden");
-    /* hide everything else in background */
+    // hide everything else in background
     hideGameArea[0].classList.add("hidden");
     hideScoreArea[0].classList.add("hidden");
 };
 
- /* Closes how to play box */
+ // Closes how to play box
  closeHowTo.addEventListener("click", closeRulesBox);
 
  function closeRulesBox() {
     howToPlayBox.classList.add("hidden");
-    /* show content again when how to closes */
+    // show content again when how to closes
     hideGameArea[0].classList.remove("hidden");
     hideScoreArea[0].classList.remove("hidden");
  }
