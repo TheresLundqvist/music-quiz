@@ -114,16 +114,16 @@ function nextQuestion() {
 }
 
 // Correct answer counter
-function correctAnswer(selectedLabel) {
+function correctAnswer(selectedLabel, pointValue) {
     selectedLabel.classList.add("correct");
-    rightAnswers += 0.5;
+    rightAnswers += pointValue;
     rightAnswerSpan.innerText = rightAnswers;
 }
 
 // Incorrect answer counter
-function wrongAnswer(selectedLabel) {
+function wrongAnswer(selectedLabel, pointValue) {
     selectedLabel.classList.add("incorrect");
-    wrongAnswers += 0.5;
+    wrongAnswers += pointValue;
     wrongAnswerSpan.innerText = wrongAnswers;
 }
 
