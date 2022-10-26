@@ -82,6 +82,14 @@ function disableOptions() {
         input.classList.add("disabled");
     });
 }
+function enableOptions() {
+    optionLabels.forEach(label => {
+        label.classList.remove("disabled");
+    });
+    optionInputs.forEach(input => {
+        input.classList.remove("disabled");
+    });
+}
 resetButton.addEventListener("click", restartGame);
 function restartGame() {
     location.reload();
