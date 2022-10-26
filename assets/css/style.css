@@ -80,7 +80,7 @@ header {
     background-color: #333;
     padding: 20px 50px;
     position: fixed;
-    left: 250px;
+    left: 200px;
     top: 50px;
     font-size: 1.2vw;
 }
@@ -94,7 +94,7 @@ header {
 #close-how-to {
     position: fixed;
     top: 50px;
-    right: 250px;
+    right: 300px;
     font-size: 2.5vw;
     cursor: pointer;
 }
@@ -233,7 +233,19 @@ label.incorrect {
 
 /* Media queries */
 
-/* For medium size screens from 992px and down */
+/* For large size screens from 1200px and down */
+@media screen and (max-width: 1200px) {
+    #how-to-play {
+        top: 200px;
+    }
+
+    #close-how-to {
+        top: 210px;
+        right: 260px;
+    }
+}
+
+/* For large to medium size screens from 992px and down */
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 6vw;
@@ -254,9 +266,20 @@ label.incorrect {
     #next {
         font-size: 1.7vw;
     }
+
+    #how-to-play {
+        left: 150px;
+        top: 150px;
+        font-size: 1.5vw;
+    }
+
+    #close-how-to {
+        top: 160px;
+        right: 180px;
+    }
 }
 
-/* For medium to small screens (tablets) from 890px and down */
+/* For medium screens (tablets) from 890px and down */
 @media screen and (max-width: 890px) {
     img {
         width: 438px;
@@ -264,12 +287,40 @@ label.incorrect {
     }
 
     .intro {
-        margin: 0px 70px;
+        font-size: 3vw;
     }
 
     #how-to,
     #high-score {
         font-size: 2vw;
+    }
+
+    .button a {
+        font-size: 5vw;
+        padding: 0px 70px;
+        margin: 30px;
+    }
+
+    #how-to-play {
+        left: 60px;
+        font-size: 1.8vw;
+    }
+
+    #close-how-to {
+        right: 100px;
+    }
+}
+
+/* For medium to small screens (tablets) from 750px and down */    
+@media screen and (max-width: 750px) {
+    #how-to-play {
+        top: 90px;
+        left: 50px;
+    }
+
+    #close-how-to {
+        top: 100px;
+        right: 100px;
     }
 }
 
@@ -298,17 +349,40 @@ label.incorrect {
         font-size: 3.5vw;
     }
 
-    #how-to,
-    #high-score {
+    #how-to {
         font-size: 3vw;
+        margin: 20px 30px;
+    }
+
+    #how-to-play {
+        top: 130px;
+        left: 15px;
+        font-size: 2.2vw;
+        padding: 10px 20px;
+    }
+
+    #close-how-to {
+        top: 140px;
+        right: 30px;
+    }
+
+    nav a {
+        font-size: 4vw;
+        margin: 25px 30px;
+    }
+
+    .questions h3 {
+        font-size: 5vw;
+        margin: 0 20px;
+    }
+
+    .questions p {
+        margin-bottom: 10px;
     }
 }
 
 /* For smaller screens (mobile) from 450px and down */
 @media screen and (max-width: 450px) {
-    .questions h3 {
-        font-size: 6vw;
-    }
 
     img {
         width: 338px;
@@ -324,10 +398,12 @@ label.incorrect {
     }
 
     .button a {
-        font-size: 4.5vw;
+        font-size: 7vw;
+        padding: 10px 70px;
     }
 
-    #next {
+    #next,
+    #restart {
         font-size: 3vw;
     }
     
@@ -338,21 +414,81 @@ label.incorrect {
 
     nav a {
         font-size: 4vw;
+        margin: 20px 40px;
+    }
+
+    #how-to {
+        margin: 15px 40px;
+    }
+
+    .answers {
+        font-size: 3.5vw;
+        margin-bottom: 40px;
+    }
+
+    #how-to-play {
+        font-size: 3vw;
+        top: 100px;
+        left: 0;
+    }
+
+    #how-to-play p {
+        font-size: 3vw;
+    }
+
+    #close-how-to {
+        font-size: 6vw;
+        top: 100px;
     }
 }
 
 /* For extra small screens (mobile) from 350px and down */
 @media screen and (max-width: 350px) {
     .heading {
-        font-size: 9.5vw;
+        font-size: 9vw;
+        margin: 0 10px;
     }
 
-    .button a {
-        font-size: 5.5vw;
+    .intro {
+        font-size: 6vw;
+        margin: 5px 10px;
     }
 
     .scores {
         font-size: 4.3vw;
+    }
+
+    #how-to {
+        margin: 20px 20px;
+        font-size: 4vw;
+    }
+
+    nav a {
+        margin: 20px 20px;
+        padding: 10px 15px;
+    }
+
+    .answers {
+        font-size: 4.5vw;
+    }
+
+    .questions h3 {
+        font-size: 6vw;
+    }
+
+    #restart,
+    #next {
+        font-size: 4.5vw;
+    }
+
+    #how-to-play {
+        font-size: 4vw;
+        top: 80px;
+    }
+
+    #close-how-to {
+        top: 75px;
+        right: 20px;
     }
 }
 
