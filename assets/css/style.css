@@ -1,7 +1,7 @@
 body {
-    font-family: Titillium Web, sans-serif;
+    font-family: Shadows Into Light Two, sans-serif;
     font-weight: 400;
-    color: #3d8f7d;
+    color: #fff;
     background-color: black;
 }
 
@@ -22,28 +22,31 @@ main {
 }
 
 .heading {
+    font-family: Permanent Marker, sans-serif;
     letter-spacing: 3px;
-    font-weight: 900;
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .heading a {
     text-decoration: none;
-    color: #3d8f7d;
-    font-family: Titillium Web, sans-serif;
+    color: #fff;
+    font-family: Permanent Marker, sans-serif;
     font-weight: 900;
     font-size: 4vw;
 }
 
 .heading i {
-    color: #f6cc7d;
+    color: #fff;
 }
 
 .intro {
     font-weight: 400;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8vw;
 }
 
 .button {
@@ -52,69 +55,73 @@ main {
 }
 
 .button a {
+    font-family: Permanent Marker, sans-serif;
     font-weight: 900;
-    font-size: 1.7vw;
+    font-size: 2.8vw;
     text-decoration: none;
-    color: #fff;
-    border: 2px solid #3d8f7d;
     border-radius: 5%;
-    background-color: #3d8f7d;
-    padding: 2px 10px;
+    color: #fff;
+    border: 2px solid #ab8ca6;
+    background-color: #ab8ca6;
+    padding: 0px 50px;
     cursor: pointer;
-}
-
-.button a:hover {
-    color: #f6cc7d;
 }
 
 /* Game page */
 
 /* header and navigation */
 
-.hidden {
-    display: none;
-}
-
 header {
     height: 100px;
 }
 
 #how-to-play {
-    background-color: #f6cc7d;
+    font-weight: 500;
+    background-color: #333;
     padding: 20px 50px;
     position: fixed;
     left: 250px;
     top: 50px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 #how-to-play p {
-    font-style: italic;
-    font-weight: 900;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 
 #close-how-to {
     position: fixed;
     top: 50px;
-    right: 350px;
+    right: 250px;
     font-size: 2.5vw;
     cursor: pointer;
 }
 
 #how-to {
+    font-family: Permanent Marker, sans-serif;
     float: right;
-    font-size: 1.3vw;
+    border-radius: 5%;
+    font-size: 1.7vw;
     font-weight: 900;
     padding: 10px 10px;
-    background-color: #3d8f7d;
+    background-color: #ab8ca6;
     color: #fff;
     text-align: center;
     margin: 30px 50px;
     cursor: pointer;
 }
 
-#how-to:hover {
-    color: #f6cc7d;
+/* hover effects for buttons */
+
+#how-to:hover,
+nav a:hover,
+.button a:hover,
+#next:hover,
+#restart:hover {
+    box-shadow: 5px 5px 5px #333;
+    color: #333;
 }
 
 /* navigation */
@@ -126,14 +133,9 @@ nav a {
     font-size: 1.3vw;
     text-decoration: none;
     color: #fff;
-    background-color: #3d8f7d;
+    background-color: #ab8ca6;
     border-radius: 5%;
     padding: 5px 15px;
-}
-
-nav a:hover {
-    background-color: #3d8f7d;
-    color: #f6cc7d;
 }
 
 /* Game area */
@@ -143,91 +145,90 @@ nav a:hover {
 }
 
 .questions h3 {
+    font-family: Shadows Into Light Two, sans-serif;
     font-size: 3vw;
-    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .questions p {
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.questions i {
-    color: #f6cc7d;
+    font-family: Shadows Into Light Two, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
 .answers {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.7vw;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 label.correct {
-    background-color: #3d8f7d;
+    background-color: #7fbf7f;
     color: white;
     padding: 0 10px;
 }
 
 label.incorrect {
-    background-color: #f57558;
+    background-color: #ff7f7f;
     color: white;
     padding: 0 10px;
 }
 
 #next {
-    font-size: 1.3vw;
-    border: 2px solid #3d8f7d;
+    font-family: Permanent Marker, sans-serif;
+    font-size: 1.8vw;
+    border: 2px solid #ab8ca6;
     border-radius: 5%;
-    background-color: #fff;
-    color: #3d8f7d;
+    background-color: #ab8ca6;
+    color: #fff;
     margin: 10px;
-    padding: 5px 10px;
-    font-weight: 900;
+    padding: 5px 50px;
 }
 
 #restart {
+    font-family: Permanent Marker, sans-serif;
     font-size: 2vw;
-    background-color: #f6cc7d;
-    border: 2px solid #3d8f7d;
     border-radius: 5%;
+    background-color: #fff;
+    color: #333;
     margin: 10px;
-    padding: 10px 15px;
-    font-weight: 900;
-    color: #3d8f7d;
+    padding: 5px 50px;
 }
 
-#next:hover,
-#restart:hover {
-    background-color: #3d8f7d;
-    color: #f6cc7d;
-}
 
 /* Score area */
 
 .score-area {
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .scores {
-    font-weight: 900;
-    color: #3d8f7d;
-    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2vw;
     text-align: center;
     display: inline-block;
-    margin: 10px 50px;
+    margin-top: 10px;
+    margin-left: 250px;
 }
 
 #right-score {
-    color: #fff;
+    font-weight: bold;
+    color: #333;
     border-radius: 5%;
-    background-color: #3d8f7d;
+    background-color: #7fbf7f;
     padding: 2px 10px;
 }
 
 #wrong-score {
-    background-color: #f57558;
+    font-weight: bold;
+    background-color: #ff7f7f;
     border-radius: 5%;
-    color: #fff;
+    color: #333;
     padding: 2px 10px;
 }
 
@@ -357,7 +358,13 @@ label.incorrect {
     }
 }
 
+/* classes for manipulating with javascript */
+
 input.disabled,
 label.disabled {
     pointer-events: none;
+}
+
+.hidden {
+    display: none;
 }
