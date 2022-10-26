@@ -51,20 +51,23 @@ function changeQuestions(question) {
 }
 
 function checkAnswer(e) {
+    disableOptions();
     nextButton.classList.remove("hidden");
-    let selectedLabel;
-    let selectedItem = e.target;
+    let selectedLabel, selectedItem, pointValue;
+    selectedItem = e.target;
     if (selectedItem.nodeName == "INPUT") {
         selectedLabel = selectedItem.nextElementSibling;
+        pointValue = 1;
     } else {
         selectedLabel = selectedItem;
+        pointValue = 0;
     }
     let dataValue = selectedLabel.dataset.correct;
     // check to see if the user is incorrect or correct
     if (dataValue) {
-        correctAnswer(selectedLabel);
+        correctAnswer(selectedLabel, pointValue);
     } else {
-        wrongAnswer(selectedLabel);
+        wrongAnswer(selectedLabel, pointValue);
     }
     if(shuffledQuestions.length > questionIndex + 1) {
         nextButton.addEventListener("click", nextQuestion);
