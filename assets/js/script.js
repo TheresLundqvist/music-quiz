@@ -1,48 +1,60 @@
 /* jshint esversion: 11 */
+
+// creating variables to manipulate the DOM 
 let shuffledQuestions;
 let questionIndex = 0;
+// correct and incorrect counter
 let rightAnswerSpan = document.getElementById("right-score");
 let rightAnswers = 0;
 let wrongAnswerSpan = document.getElementById("wrong-score");
 let wrongAnswers = 0;
+// how to play button and box
 let howToPlayButton = document.getElementById("how-to");
 let howToPlayBox = document.getElementById("how-to-play");
 let closeHowTo = document.getElementById("close-how-to");
+// game and score area
 let hideGameArea = document.getElementsByClassName("game-area");
 let hideScoreArea = document.getElementsByClassName("score-area");
+// next and reset button
 let nextButton = document.getElementById("next");
 let resetButton = document.getElementById("restart");
+// question counter
 let questionNr = document.getElementById("question-nr");
+let questionCount = document.getElementById("question-count");
+// the questions 
+let questionSpan = document.getElementById("question");
+// target all inputs and labels for the options
 let optionInputs = document.querySelectorAll("#options input");
 let optionLabels = document.querySelectorAll("#options label");
-let questionSpan = document.getElementById("question");
-let questionCount = document.getElementById("question-count");
 
+
+// counter for the variable questions in quiz.html
 questionCount.innerText = questions.length;
 
-// function to shuffle questions with math random.
+// shuffle questions using math random
 shuffleQuestions();
 function shuffleQuestions() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     getNextQuestion();
 }
 
-// function to change question to next from question-index.
+// enable options and call on changeQuestions function
 function getNextQuestion() {
     enableOptions();
     changeQuestions(shuffledQuestions[questionIndex]);
 }
 
+// changeQuestions function
 function changeQuestions(question) {
     questionNumber();
-    questionSpan.innerText = question.question;
+    questionSpan.innerText = question.question; 
     optionLabels.forEach(function(label, labelIndex) {
         question.answers.forEach(function(answer, answerIndex) {
             if (labelIndex == answerIndex) {
-                label.innerText = answer.text;
+                label.innerText = answer.text; 
                 if (answer.correct) {
-                    label.dataset.correct = answer.correct;
-                    label.previousElementSibling.dataset.correct = answer.correct;
+                    label.dataset.correct = answer.correct; //if answer correct label text turns green
+                    label.previousElementSibling.dataset.correct = answer.correct; // if input radio button answer is correct then label text also turns green
                 }
                 label.addEventListener("click", checkAnswer);
                 label.previousElementSibling.addEventListener("click", checkAnswer);
@@ -51,16 +63,17 @@ function changeQuestions(question) {
     });
 }
 
+// function to check the answer user picked
 function checkAnswer(e) {
     disableOptions();
-    nextButton.classList.remove("hidden");
+    nextButton.classList.remove("hidden"); // next button showns again when user clicks one option
     let selectedLabel, selectedItem, pointValue;
     selectedItem = e.target;
-    if (selectedItem.nodeName == "INPUT") {
+    if (selectedItem.nodeName == "INPUT") { 
         selectedLabel = selectedItem.nextElementSibling;
         pointValue = 1;
     } else {
-        selectedLabel = selectedItem;
+        selectedLabel = selectedItem; 
         pointValue = 0;
     }
     let dataValue = selectedLabel.dataset.correct;
@@ -73,47 +86,52 @@ function checkAnswer(e) {
     if(shuffledQuestions.length > questionIndex + 1) {
         nextButton.addEventListener("click", nextQuestion);
     } else {
-        nextButton.classList.add("hidden");
-        resetButton.classList.remove("hidden");
+        nextButton.classList.add("hidden"); // when all questions have been shown hide next button and 
+        resetButton.classList.remove("hidden"); // replace it with reset button.
     }
 }
 
+// disable other options when user picked one
 function disableOptions() {
     optionLabels.forEach(label => {
-        label.classList.add("disabled");
+        label.classList.add("disabled"); // labels disabled
     });
     optionInputs.forEach(input => {
-        input.classList.add("disabled");
+        input.classList.add("disabled"); //input disabled
     });
 }
 
+// enable options again for next question
 function enableOptions() {
     optionLabels.forEach(label => {
-        label.classList.remove("disabled");
+        label.classList.remove("disabled"); // labels enabled
     });
     optionInputs.forEach(input => {
-        input.classList.remove("disabled");
+        input.classList.remove("disabled"); // inputs enabled
     });
 }
 
+// reload page when user clicks restart button
 resetButton.addEventListener("click", restartGame);
 function restartGame() {
     location.reload();
 }
 
+// increase answered questions counter by one
 function questionNumber() {
     questionNr.innerText = questionIndex + 1;
 }
 
+// remove correct and incorrect classes for next question
 function nextQuestion() {
     optionInputs.forEach(input => {
         delete input.dataset.correct;
         input.checked = false;
-        input.classList.remove("correct", "incorrect");
+        input.classList.remove("correct", "incorrect"); // remove classes from inputs
     });
     optionLabels.forEach(label => {
         delete label.dataset.correct;
-        label.classList.remove("correct", "incorrect");
+        label.classList.remove("correct", "incorrect"); // remove classes from labels
     });
     questionIndex++;
     getNextQuestion();
