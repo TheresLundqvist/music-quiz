@@ -80,8 +80,8 @@ header {
     background-color: #333;
     padding: 20px 50px;
     position: fixed;
-    left: 200px;
-    top: 50px;
+    left: 150px;
+    top: 120px;
     font-size: 1.2vw;
 }
 
@@ -93,8 +93,8 @@ header {
 
 #close-how-to {
     position: fixed;
-    top: 50px;
-    right: 300px;
+    top: 130px;
+    right: 230px;
     font-size: 2.5vw;
     cursor: pointer;
 }
@@ -241,7 +241,7 @@ label.incorrect {
 
     #close-how-to {
         top: 210px;
-        right: 260px;
+        right: 200px;
     }
 }
 
@@ -268,14 +268,15 @@ label.incorrect {
     }
 
     #how-to-play {
-        left: 150px;
+        left: 0;
         top: 150px;
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     #close-how-to {
         top: 160px;
-        right: 180px;
+        right: 30px;
+        font-size: 3vw;
     }
 }
 
@@ -301,29 +302,33 @@ label.incorrect {
         margin: 30px;
     }
 
-    #how-to-play {
-        left: 60px;
-        font-size: 1.8vw;
+    .questions p {
+        margin-bottom: 30px;
     }
 
-    #close-how-to {
-        right: 100px;
+    .answers {
+        font-size: 2.3vw;
     }
 }
 
 /* For medium to small screens (tablets) from 750px and down */    
 @media screen and (max-width: 750px) {
     #how-to-play {
-        top: 90px;
-        left: 50px;
+        top: 150px;
+        font-size: 2.5vw;
     }
 
     #close-how-to {
-        top: 100px;
-        right: 100px;
+        top: 150px;
+        right: 50px;
+        font-size: 4vw;
     }
-}
 
+    #how-to-play p {
+        font-size: 3vw;
+    }
+
+}
 
 /* For small screens (tablets) from 576px and down */    
 @media screen and (max-width: 576px) {
@@ -356,7 +361,6 @@ label.incorrect {
 
     #how-to-play {
         top: 130px;
-        left: 15px;
         font-size: 2.2vw;
         padding: 10px 20px;
     }
@@ -432,14 +436,11 @@ label.incorrect {
         left: 0;
     }
 
-    #how-to-play p {
-        font-size: 3vw;
-    }
-
     #close-how-to {
         font-size: 6vw;
         top: 100px;
     }
+
 }
 
 /* For extra small screens (mobile) from 350px and down */
