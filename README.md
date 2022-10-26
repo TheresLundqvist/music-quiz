@@ -1,12 +1,12 @@
 # **Music Quiz**
 
-Music Quiz website is a quick and easy way of entertainment by testing users musical knowledge through music related questions. The music quiz will generate twenty questions 
-with three options to choose from, only one of them is correct. If the user gives the correct answer, the answer will appear in green and one point will be added to the correct 
-answers counter. If user is incorrect, the option choosen will appear in red and one point will then be added to the incorrect counter. The quiz shuffles both questions and 
-rearranges positions of answers to disable user from memorizing the correct answers. 
+Music Quiz website is a quick and easy way of entertainment by testing users musical knowledge through music related questions.   
+The music quiz will generate twenty questions with three options to choose from, only one of them is correct. If the user gives the correct answer, the answer will  
+appear in green and one point will be added to the correct answers counter. If user is incorrect, the option choosen will appear in red and one point will then be   
+added to the incorrect counter. The quiz shuffles both questions and rearranges positions of answers to disable user from memorizing the correct answers. 
   
-Instructions on how to play is easily accessible at the top of the page by clicking the button "how to play". If users wishes to return to home-page the home button is visually
-placed in the top left corner of page. 
+Instructions on how to play is easily accessible at the top of the page by clicking the button "how to play". If users wishes to return to home-page the home button  
+is visually placed in the top left corner of page. 
 
 <img width="1000" src="documentation/screenshot-responsive.png">
 
@@ -30,6 +30,7 @@ placed in the top left corner of page.
 * The previous colors from the header is switched up in the main section with headers background as font color and vice versa. 
 
 <img width="1000" src="documentation/main.png">
+<img width="1000" src="documentation/game-area.png">
 
 ### **The about section**
 * The about section gives the users more information about the studio and location.
@@ -37,7 +38,7 @@ placed in the top left corner of page.
 * The same woman from the main section accours in this sections again to maintain a common tread.
 * The colors from the header recur in this section.
 
-<img width="1000" src="documentation/about-section.png">
+<img width="1000" src="documentation/how-to-play.png">
 
 
 ### **Customer reviews**
@@ -46,7 +47,8 @@ placed in the top left corner of page.
 * The goal is to reenforce the user that the studio is worth a visit.
 * The colors from main section recurs here to create a good balance between sections.
 
-<img width="1000" src="documentation/reviews.png">
+<img width="500" src="documentation/wrong-answer.png"><img width="500" src="documentation/correct-answer-next.png">
+<img width="1000" src="documentation/restart-button.png">
 
 ### **The contact section**
 
@@ -54,7 +56,7 @@ placed in the top left corner of page.
 * This section also gives user contact information to call or email.
 * The page matches the colors from about section with same box style.
 
-<img width="1000" src="documentation/contact.png">
+<img width="1000" src="documentation/correct-incorrect-counter.png">
 
 ### **The footer section**
 * The footer section is linked with all social media platforms the studio is connected to.
@@ -98,25 +100,20 @@ placed in the top left corner of page.
 
 ## **Bugs**
 
-* When I deployed my project to Github pages I discovered my project was broken, the links to the other files (CSS, blog and gallery) dit not work.
-* I discovered this was because I had used aboulte file paths such as this in my code
-
-![bug, wrong filepath](documentation/filepath.png)
-
-* When I removed the / from the start of the path the problem was fixed.
+* No bugs.
 
 ---
 
 ## **Validator testing**
 
 * HTML
-3 errors occured since I used h1-headings on three occations i blog.html, when replaced code passed.
+3 errors occured since I did´nt use heading for the score-area section. When I replaced the paragraphs to h2 headings the code passed.
 * CSS
 No errors were found when passing through the official (Jigsaw) validator.
 * Accessability
 I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
-<img width="1000" src="documentation/lighthouse-score.png">
+<img width="1000" src="documentation/lighthouse.png">
 
 ---
 
@@ -141,12 +138,11 @@ The live link can be found here - [The Yoga Studio](https://thereslundqvist.gith
 
 ### **Content**
 
-* The text for the about section is copied and translated from [Hot Yoga - Stockholm](https://www.hotyogasthlm.se/)
-* The customer reviews was copied from [Trustpilot](https://www.trustpilot.com/review/www.yogabody.com)
-* Icons for about, reviews, social media icons and blog headers are from [Font Awesome](https://fontawesome.com/)
-* The blogposts are copied from [Mind Oasis](https://mindoasis.org/)
+* Questions and answers for Quiz come from [Open Trivia DB](https://opentdb.com/api_config.php)
+* Icons for next and restart button come from [Font Awesome](https://fontawesome.com/)
+* Fonts for page are imported from [Google fonts](https://fonts.google.com/) 
 
 ### **Media** 
 
-* The images was all downloaded from [Pexels](https://www.pexels.com/sv-se/)
+* The main image is downloaded from [Pexels](https://www.pexels.com/sv-se/)
 
