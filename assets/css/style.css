@@ -343,3 +343,8 @@ label.incorrect {
         font-size: 4.3vw;
     }
 }
+
+input.disabled,
+label.disabled {
+    pointer-events: none;
+}
