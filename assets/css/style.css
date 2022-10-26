@@ -2,6 +2,7 @@ body {
     font-family: Titillium Web, sans-serif;
     font-weight: 400;
     color: #3d8f7d;
+    background-color: black;
 }
 
 * {
@@ -13,8 +14,7 @@ body {
 /* Main entry page */
 
 img {
-    width: 538px;
-    height: 344px;
+    width: 30%
 }
 
 main {
