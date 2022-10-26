@@ -74,6 +74,14 @@ function checkAnswer(e) {
     }
 }
 
+function disableOptions() {
+    optionLabels.forEach(label => {
+        label.classList.add("disabled");
+    });
+    optionInputs.forEach(input => {
+        input.classList.add("disabled");
+    });
+}
 resetButton.addEventListener("click", restartGame);
 function restartGame() {
     location.reload();
