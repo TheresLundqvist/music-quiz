@@ -34,69 +34,46 @@ The last mentioned font was choosen to be more readable then using the thick mar
 
 ## **Game page**
 
-### **The main section**
+### **The quiz**
 
-* The main section gives users a glimt of the studio through a large photo of two women training in serene enviroment.
-* The main text is a short introduction of the yoga studio.
-* Under the intriguing main text is a clickable read more button that takes users to about section further down the page.
-* The previous colors from the header is switched up in the main section with headers background as font color and vice versa. 
+* The quiz starts directly after user clicks the play-now button from homepage. 
+* First question of the quiz will appear instantly and if user is unsure of how to play, user can access instructions in header of page.
+* The Quiz consist's of questions with three options to choose from with only one of them beeing the right one.
+* The next button is only visual after user has picked one option and therefor disable user from skipping questions.
 
-<img width="1000" src="documentation/game-area.png">
+<img width="1000" src="documentation/game-area.png">     
 
-### **The about section**
-* The about section gives the users more information about the studio and location.
-* This section provides user with information about the studio, what the goal of the studio is and and whom the yoga classes are for - everybody! 
-* The same woman from the main section accours in this sections again to maintain a common tread.
-* The colors from the header recur in this section.
+### **Answer options**
+
+* When user have clicked their option of answer, the quiz will control the answer and visually tell the user if they are right or wrong by turning the option red or green.   
+Green if user is correct and red if user are wrong.  
+* When user picks the right answer one point will be added to the correct answer box, and if user is wrong the point will instead be added to incorrect answer box.
+
+<img width="500" src="documentation/wrong-answer.png"><img width="500" src="documentation/correct-answer-next.png">  
+
+### **Restart game**
+
+* When all 20 questions is answered the next button will change into a restart button, where user can reload game.
+
+<img width="1000" src="documentation/restart-button.png"> 
+
+### **How to play**
+* The how to play button is always visual throughout the game.
+* When clicked a new text box appears with instructions on how to play the music quiz.
+* When the instructions on how to play is visual on the screen, everything else is hidden to minimize distractions from background elements.
+* The color from the main image microphone is picked up as a background for the instructions in how to play, choosen to create good contrast between it and the white font.
+* To exit the instructions and return to game, user can just click the x in the top right corner.
 
 <img width="1000" src="documentation/how-to-play.png">
 
 
-### **Customer reviews**
+### **Score counters**
 
-* The customer reviews aim to increase the users need for a visit to the studio by showing three happy clients reviews.
-* The goal is to reenforce the user that the studio is worth a visit.
-* The colors from main section recurs here to create a good balance between sections.
-
-<img width="500" src="documentation/wrong-answer.png"><img width="500" src="documentation/correct-answer-next.png">
-<img width="1000" src="documentation/restart-button.png">
-
-### **The contact section**
-
-* The contact section provides the user with location to join The Yoga Studio.
-* This section also gives user contact information to call or email.
-* The page matches the colors from about section with same box style.
+* Users correct and incorrect answers is counted at the bottom of the game page, user scores one point for each incident.
+* The counters are visually matched with the red and green colors from the right and wrong answers, so when a answer turns red the counter adds one point to the red box in incorrect  
+counter and vice versa for when user is right.
 
 <img width="1000" src="documentation/correct-incorrect-counter.png">
-
-### **The footer section**
-* The footer section is linked with all social media platforms the studio is connected to.
-* The page links to facebook, instagram, twitter and youtube and opens i new tabs when clicked.
-* The colors from the header at the top, matches the colors in this section at the bottom of page - to create a nice frame to page.
-
-<img width="1000" src="documentation/social-media.png">
-
-### **Blog preview**
-
-* The blog navigation link from the home page redirects user to the blog page.
-* In the blog main page a preview of three blog posts can be seen, the whole area round the previews is clickable and redirects users to the full blog posts in other pages.
-* The blog preview page is arrenged to fit in with colors from the home page.
-* The magnifying glas icon is used to hint to users that the area is a clickable link that will redirect them.
-
-<img width="1000" src="documentation/blog-main.png">
-
-### **Full blog post pages**
-
-* The full blog post pages is color indentical to its parent blog page - the blog preview page.
-
-<img width="1000" src="documentation/full-blog-post.png">
-
-## **Gallery**
-
-* Matching photos is combined in one page to give inspiration to users.
-* The gallery is responsive and changes from 4 columns - to three - to two and lastly to one in small devices.
-
-<img width="1000" src="documentation/gallery.png">
 
 ---
 
@@ -104,7 +81,7 @@ The last mentioned font was choosen to be more readable then using the thick mar
 
 * I tested that the page works in diffrent browsers such as Chrome, firefox and Microsoft Edge.
 * I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
-* I confirmed that the header, navigation, main, about us, reviews, footer, gallery and blog pages text are all readable and easy to understand.
+* I confirmed that the header, navigation, main, how to play box, restart and next button's text are all readable and easy to understand.
 * I have confirmed that the links between diffrent pages work and are accessible.
 
 ## **Bugs**
