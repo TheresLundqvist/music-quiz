@@ -92,11 +92,23 @@ counter and vice versa for when user is right.
 
 ## **Validator testing**
 
-* HTML
+* **HTML**
 3 errors occured since I did´nt use heading for the score-area section. When I replaced the paragraphs to h2 headings the code passed.
-* CSS
+* **CSS**
 No errors were found when passing through the official (Jigsaw) validator.
-* Accessability
+* **Javascript**
+3 warnings occured in JShint validation testing, one of them was a unnecessary semicolon at the end of a function and was immediatly removed.   
+One function uses Math.random and passes a decimal of 0.5 and the validation warned that the decimal could be confused as a dot, this warning was  
+overlooked since the decimal is needed for the function to work correctly. The other warning was for the undefined variable "question" in the script.js  
+but the variable can be found defined in questions.file instead.  
+#### **The following metrics was returned from JShint:**  
+- There are 22 functions in this file.
+- Function with the largest signature take 2 arguments, while the median is 1.
+- Largest function has 17 statements in it, while the median is 2.
+- The most complex function has a cyclomatic complexity value of 4 while the median is 1.      
+  
+
+* **Accessability**
 I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 <img width="1000" src="documentation/lighthouse.png">
@@ -116,7 +128,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * From the source section drop-down menu, select the Master Branch.
 * Once the master branch has been selected, the page provided the link to the completed website.
 
-The live link can be found here - [The Yoga Studio](https://thereslundqvist.github.io/The-Yoga-Studio/)
+The live link can be found here - [Music Quiz](https://thereslundqvist.github.io/music-quiz/)
 
 ---
 
