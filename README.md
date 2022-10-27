@@ -13,14 +13,21 @@ is visually placed in the top left corner of page.
 ---
 ## **Features** 
 
+### **Home page**
+
+* 
+
+<img width="1000" src="documentation/main.png">
+
 ### **Navigation**  
 
- * The top of the page shows the studio name, a clickable link that takes user back to homepage.
- * To the right of the navigation user can find links to home, blog and gallery pages.
- * The navigation has a dark font and a lighter background for good contrast.
- * The studio name has a bigger font than the navigation bar to make a clear statement of the name of studio and webpage.
+ * To the left of the header user can find the link to the home page through a icon of a house/home.
+ * On the right side the how-to-play button is located and matched by colors with the homepage link.
+ * The header matches the rest of the website´s black background with icons and buttons in a lightpink for good contrast.
+ * When user hovers the homepage link and how-to-play button the font changes to a dark grey and adds a box-shadow.
 
  <img width="1000" src="documentation/header.png">
+ <img width="1000" src="documentation/hover-button.png">
 
 ### **The main section**
 
@@ -29,7 +36,6 @@ is visually placed in the top left corner of page.
 * Under the intriguing main text is a clickable read more button that takes users to about section further down the page.
 * The previous colors from the header is switched up in the main section with headers background as font color and vice versa. 
 
-<img width="1000" src="documentation/main.png">
 <img width="1000" src="documentation/game-area.png">
 
 ### **The about section**
