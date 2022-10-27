@@ -15,7 +15,10 @@ is visually placed in the top left corner of page.
 
 ### **Home page**
 
-* 
+* The first thing user will see is the homepage before entering the music quiz page
+* The background is matched with the main image's dark colors and to contrast that, the font and button are in white and lightpink.
+* To give the website a more playful feeling the font for the logo is in handwritten thick permanent marker matched with handwritten Shadow into Light Two font.   
+The last mentioned font was choosen to be more readable then using the thick marker for the essential and more important parts.
 
 <img width="1000" src="documentation/main.png">
 
@@ -28,6 +31,8 @@ is visually placed in the top left corner of page.
 
  <img width="1000" src="documentation/header.png">
  <img width="1000" src="documentation/hover-button.png">
+
+## **Game page**
 
 ### **The main section**
 
@@ -70,8 +75,6 @@ is visually placed in the top left corner of page.
 * The colors from the header at the top, matches the colors in this section at the bottom of page - to create a nice frame to page.
 
 <img width="1000" src="documentation/social-media.png">
-
-## **Blog page**
 
 ### **Blog preview**
 
