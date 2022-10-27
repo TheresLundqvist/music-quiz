@@ -162,7 +162,7 @@ function showRulesBox() {
     // hide everything else in background
     hideGameArea[0].classList.add("hidden");
     hideScoreArea[0].classList.add("hidden");
-};
+}
 
  // Closes how to play box
  closeHowTo.addEventListener("click", closeRulesBox);
