@@ -1,12 +1,8 @@
 # **Music Quiz**
 
-Music Quiz website is a quick and easy way of entertainment by testing users musical knowledge through music related questions.   
-The music quiz will generate twenty questions with three options to choose from, only one of them is correct. If the user gives the correct answer, the answer will  
-appear in green and one point will be added to the correct answers counter. If user is incorrect, the option choosen will appear in red and one point will then be   
-added to the incorrect counter. The quiz shuffles both questions and rearranges positions of answers to disable user from memorizing the correct answers. 
+Music Quiz website is a quick and easy way of entertainment by testing users musical knowledge through music related questions. The music quiz will generate twenty questions with three options to choose from, only one of them is correct. If the user gives the correct answer, the answer will appear in green and one point will be added to the correct answers counter. If user is incorrect, the option choosen will appear in red and one point will then be added to the incorrect counter. The quiz shuffles both questions and rearranges positions of answers to disable user from memorizing the correct answers. 
   
-Instructions on how to play is easily accessible at the top of the page by clicking the button "how to play". If users wishes to return to home-page the home button  
-is visually placed in the top left corner of page. 
+Instructions on how to play is easily accessible at the top of the page by clicking the button "how to play". If users wishes to return to home-page the home button is visually placed in the top left corner of page. 
 
 <img width="1000" src="documentation/screenshot-responsive.png">
 
@@ -16,9 +12,8 @@ is visually placed in the top left corner of page.
 ### **Home page**
 
 * The first thing user will see is the homepage before entering the music quiz page
-* The background is matched with the main image's dark colors and to contrast that, the font and button are in white and lightpink.
-* To give the website a more playful feeling the font for the logo is in handwritten thick permanent marker matched with handwritten Shadow into Light Two font.   
-The last mentioned font was choosen to be more readable then using the thick marker for the essential and more important parts.
+* The background is matched with the main image's dark colors and to contrast that, the font and button are in white and light pink.
+* To give the website a more playful feeling the font for the logo is in handwritten thick permanent marker matched with handwritten Shadow into Light Two font. The last font was chosen to be more readable rather than using the thick marker for the essential and more important parts.
 
 <img width="1000" src="documentation/main.png">
 
@@ -45,8 +40,7 @@ The last mentioned font was choosen to be more readable then using the thick mar
 
 ### **Answer options**
 
-* When user have clicked their option of answer, the quiz will control the answer and visually tell the user if they are right or wrong by turning the option red or green.   
-Green if user is correct and red if user are wrong.  
+* When user have clicked their option of answer, the quiz will control the answer and visually tell the user if they are right or wrong by turning the option red or green. Green if user is correct and red if user are wrong.  
 * When user picks the right answer one point will be added to the correct answer box, and if user is wrong the point will instead be added to incorrect answer box.
 
 <img width="500" src="documentation/wrong-answer.png"><img width="500" src="documentation/correct-answer-next.png">  
@@ -71,8 +65,7 @@ Green if user is correct and red if user are wrong.
 ### **Score counters**
 
 * Users correct and incorrect answers is counted at the bottom of the game page, user scores one point for each incident.
-* The counters are visually matched with the red and green colors from the right and wrong answers, so when a answer turns red the counter adds one point to the red box in incorrect  
-counter and vice versa for when user is right.
+* The counters are visually matched with the red and green colors from the right and wrong answers, so when a answer turns red the counter adds one point to the red box in incorrect counter and vice versa for when user is right.
 
 <img width="1000" src="documentation/correct-incorrect-counter.png">
 
@@ -98,10 +91,7 @@ counter and vice versa for when user is right.
 * **CSS**
 No errors were found when passing through the official (Jigsaw) validator.
 * **Javascript**
-3 warnings occured in JShint validation testing, one of them was a unnecessary semicolon at the end of a function and was immediatly removed.   
-One function uses Math.random and passes a decimal of 0.5 and the validation warned that the decimal could be confused as a dot, this warning was  
-overlooked since the decimal is needed for the function to work correctly. The other warning was for the undefined variable "question" in the script.js  
-but the variable can be found defined in questions.file instead.  
+3 warnings occured in JShint validation testing, one of them was a unnecessary semicolon at the end of a function and was immediatly removed. One function uses Math.random and passes a decimal of 0.5 and the validation warned that the decimal could be confused as a dot, this warning was overlooked since the decimal is needed for the function to work correctly. The other warning was for the undefined variable "question" in the script.js but the variable can be found defined in questions.file instead.  
 #### **The following metrics was returned from JShint:**  
 - There are 22 functions in this file.
 - Function with the largest signature take 2 arguments, while the median is 1.
