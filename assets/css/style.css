@@ -416,11 +416,11 @@ label.incorrect {
 
     #next,
     #restart {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     #restart-info {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     
     .scores {
