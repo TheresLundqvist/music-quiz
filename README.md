@@ -53,7 +53,8 @@ Green if user is correct and red if user are wrong.
 
 ### **Restart game**
 
-* When all 20 questions is answered the next button will change into a restart button, where user can reload game.
+* When all 20 questions are answered a text appears that informs the user that the quiz is over.
+* The next button changes into a restart button, where the user gets the option to reload the game.
 
 <img width="1000" src="documentation/restart-button.png"> 
 
