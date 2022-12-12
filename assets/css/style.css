@@ -144,6 +144,7 @@ nav a {
 
 .game-area {
     text-align: center;
+    padding-top: 50px;
 }
 
 .questions h3 {
@@ -198,6 +199,11 @@ label.incorrect {
     color: #333;
     margin: 10px;
     padding: 5px 50px;
+}
+
+#restart-info {
+    padding: 10px;
+    font-size: 2vw;
 }
 
 
@@ -410,6 +416,10 @@ label.incorrect {
 
     #next,
     #restart {
+        font-size: 3vw;
+    }
+
+    #restart-info {
         font-size: 3vw;
     }
     

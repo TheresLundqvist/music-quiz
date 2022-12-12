@@ -18,6 +18,7 @@ let hideScoreArea = document.getElementsByClassName("score-area");
 // next and reset button
 let nextButton = document.getElementById("next");
 let resetButton = document.getElementById("restart");
+let resetInfo = document.getElementById("restart-info");
 // question counter
 let questionNr = document.getElementById("question-nr");
 let questionCount = document.getElementById("question-count");
@@ -87,7 +88,8 @@ function checkAnswer(e) {
         nextButton.addEventListener("click", nextQuestion);
     } else {
         nextButton.classList.add("hidden"); // when all questions have been shown hide next button and 
-        resetButton.classList.remove("hidden"); // replace it with reset button.
+        resetButton.classList.remove("hidden"); // replace it with reset button
+        resetInfo.classList.remove("hidden"); // reset info.
     }
 }
 
